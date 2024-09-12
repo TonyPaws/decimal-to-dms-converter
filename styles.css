@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Absanss";
+    font-family: "Absans";
     src: url("Absans-Regular.woff2") format("woff2"),
         url("Absans-Regular.woff") format("woff");
   }
   
   body {
-    font-family: "Absanss", sans-serif;
+    font-family: "Absans", sans-serif;
     background-color: #DDFFF7;
     color: #04151F;
     padding: 20px;
@@ -41,31 +41,33 @@
     background-color: #45a049;
   }
   
-  #output {
+  #output-container {
+    display: inline-flex;   /* Aligns the output and button in one line */
+    align-items: center;    /* Aligns the icon with the text vertically */
     margin-top: 20px;
+  }
+  
+  #output {
     font-weight: bold;
-    position: relative;
     padding: 10px;
     border: 1px solid #ccc;
     display: inline-block;
   }
   
   #copyButton {
-    background-color: #007BFF;
-    color: white;
+    background-color: transparent;
+    color: #007BFF;
     border: none;
     cursor: pointer;
-    position: absolute;
-    right: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
+    font-size: 16px; /* Smaller icon size */
     padding: 5px;
+    margin-left: 10px; /* Adds space between the output and button */
   }
   
   #copyButton:hover {
-    background-color: #0056b3;
+    color: #0056b3;
   }
+  
   
   #info {
     background-color: #DDFFF7;
@@ -84,6 +86,32 @@
     text-align: left;   /* Paragraphs will be left-aligned */
   }
   
+  #contact-card {
+    background-color: #DDFFF7;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: inline-block;
+    width: 100%;  /* Ensures the card stretches across the container */
+  }
+  
+  .contact-details p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .contact-details a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+
   a {
     color: #007BFF;
     text-decoration: none;

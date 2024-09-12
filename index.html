@@ -14,8 +14,11 @@
   <input type="text" id="decimalInput" placeholder="Enter decimal coordinates (e.g. 51.37958351141102, -2.366418854124115)">
   <button onclick="convertToDMS()">convert</button>
   
-  <div id="output"></div>
-  <button id="copyButton" onclick="copyToClipboard()" style="display:none;">📋</button>
+  <div id="output-container">
+    <div id="output"></div>
+    <button id="copyButton" onclick="copyToClipboard()" style="display:none;">📋</button>
+  </div>
+
 
   <div id="info">
     <h3>about this tool</h3>
@@ -25,8 +28,7 @@
 
     <p>This tool was created because constantly splitting strings and handling separate fields for latitude and longitude was tedious. Now, everything is streamlined for quick use.</p>
 
-    <h4>example:</h4>
-    <p>If you input <code>51.37958351141102, -2.366418854124115</code> or <code>(51.3794716, -2.3589439)</code>, the result will be <code>51° 22' 46.0992'' N, 2° 21' 32.1984'' W</code>.</p>
+    <p><strong>example:</strong> If you input <code>51.37958351141102, -2.366418854124115</code> or <code>(51.3794716, -2.3589439)</code>, the result will be <code>51° 22' 46.0992'' N, 2° 21' 32.1984'' W</code>.</p>
     
     <h4>how it works</h4>
     <p>Latitude and longitude are converted into DMS format, and you'll see <strong>N</strong> for positive latitudes or <strong>S</strong> for negative latitudes, and <strong>E</strong> or <strong>W</strong> for longitudes.</p>
@@ -40,6 +42,16 @@
     <h4>author</h4>
     <p>Created by <a href="https://www.instagram.com/aiocafea" target="_blank">@aiocafea</a>. You can also visit their <a href="https://github.com/tonypaws" target="_blank">GitHub profile</a> or their personal website at <a href="https://aiocafea.neocities.org" target="_blank">aiocafea.neocities.org</a>.</p>
   </div>
+  <div id="contact-card">
+    <h3>Contact</h3>
+    <div class="contact-details">
+        <p><strong>GitHub:</strong> <a href="https://github.com/tonypaws" target="_blank">tonypaws</a></p>
+        <p><strong>Website:</strong> <a href="https://aiocafea.neocities.org" target="_blank">aiocafea.neocities.org</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/aiocafea" target="_blank">@aiocafea</a></p>
+        <p><strong>Email:</strong><a href="mailo:tonytudor3@gmail.com" target="_blank">tonytudor3@gmail.com</a></p>
+    </div>
+  </div>
+  
 </div>
 
 <script src="script.js"></script>
