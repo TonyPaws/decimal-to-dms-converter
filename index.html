@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decimal to DMS Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+  <h1>Decimal to DMS Converter</h1>
+  
+  <input type="text" id="decimalInput" placeholder="Enter decimal coordinates (e.g. 51.37958351141102, -2.366418854124115)">
+  <button onclick="convertToDMS()">Convert</button>
+  
+  <div id="output"></div>
+  <button id="copyButton" onclick="copyToClipboard()" style="display:none;">📋</button>
+
+  <div id="readme">
+    <h3>Readme</h3>
+    <p>This tool converts decimal coordinates into DMS (Degrees, Minutes, Seconds) format with cardinal directions.</p>
+    <p>Example input: <code>51.37958351141102, -2.366418854124115</code> or <code>(51.3794716, -2.3589439)</code></p>
+    <p>Example output: <code>51° 22' 46.0992'' N, 2° 21' 32.1984'' W</code></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
