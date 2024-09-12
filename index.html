@@ -17,12 +17,30 @@
   <div id="output"></div>
   <button id="copyButton" onclick="copyToClipboard()" style="display:none;">📋</button>
 
-  <div id="readme">
-    <h3>Readme</h3>
-    <p>This tool converts decimal coordinates into DMS (Degrees, Minutes, Seconds) format with cardinal directions.</p>
-    <p>Example input: <code>51.37958351141102, -2.366418854124115</code> or <code>(51.3794716, -2.3589439)</code></p>
-    <p>Example output: <code>51° 22' 46.0992'' N, 2° 21' 32.1984'' W</code></p>
-  </div>
+  <div id="info">
+    <h3>About This Tool</h3>
+    <p>This tool is designed to make your life easier by converting decimal coordinates into Degrees, Minutes, Seconds (DMS) format with the correct cardinal directions (N, S, E, W). It's especially handy when copying coordinates from Google Maps and quickly needing them in DMS format without extra steps.</p>
+    
+    <p>All you have to do is paste your decimal coordinates (latitude and longitude pair), and this tool will do the heavy lifting, outputting the DMS format that you can copy with just a click.</p>
+
+    <p>This tool was created because constantly splitting strings and handling separate fields for latitude and longitude was tedious. Now, everything is streamlined for quick use.</p>
+
+    <h4>Example:</h4>
+    <p>If you input <code>51.37958351141102, -2.366418854124115</code> or <code>(51.3794716, -2.3589439)</code>, the result will be <code>51° 22' 46.0992'' N, 2° 21' 32.1984'' W</code>.</p>
+    
+    <h4>How It Works</h4>
+    <p>Latitude and longitude are converted into DMS format, and you'll see <strong>N</strong> for positive latitudes or <strong>S</strong> for negative latitudes, and <strong>E</strong> or <strong>W</strong> for longitudes.</p>
+
+    <h4>Why Use This?</h4>
+    <p>There are other converters out there, but most require splitting and pasting the coordinate parts into separate boxes. This tool simplifies the process—just paste the entire string, and you'll get a clean, single result. It’s quick and mobile-friendly too!</p>
+    
+    <h4>More Info</h4>
+    <p>For more details or to check out the source code, visit the <a href="https://github.com/tonypaws/decimal-to-dms-converter" target="_blank">GitHub project page</a>.</p>
+
+    <h4>Author</h4>
+    <p>Created by <a href="https://www.instagram.com/aiocafea" target="_blank">@aiocafea</a>. You can also visit their <a href="https://github.com/tonypaws" target="_blank">GitHub profile</a> or their personal website at <a href="https://aiocafea.neocities.org" target="_blank">aiocafea.neocities.org</a>.</p>
+</div>
+
 </div>
 
 <script src="script.js"></script>
